@@ -1,11 +1,14 @@
+/* global coding */
 * {
     margin: 5px;
     border: 10px;
 }
+
 html {
-    background-color: grey;
+    background-color: rgb(99, 99, 99);
 }
 
+/* body coding */
 body {
     background-color
     justify-content: center;
@@ -13,9 +16,8 @@ body {
     min-height: 300px;
 }
 
-
 .box {
-    background-color: rgb(255, 249, 159);
+    background-color: rgb(116, 6, 6);
     padding-top: 30px;
     padding: 30px;
 }
@@ -27,28 +29,24 @@ body {
     font-size: 32px;
 }
 
+/* button coding */
 button {
     min-width: 150px;
     min-height: 50px;
 }
 
-output {
-    background-color: white;
-    color: black;
-    display: inline;
+/* slider coding */
+input[type=range]{
+    -webkit-appearance: none;
 }
 
-.checkboxes {
-    display: list-item;
-    list-style-type: none;
-}
 .slider {
-    width: 50%;
+    width: 25%;
     height: 20px;
     border-radius: 10px;
-    background: green;
     outline: none;
     -webkit-transition: .5s;
+    background: white;
 }
 
 .slider::-webkit-slider-thumb {
@@ -56,7 +54,7 @@ output {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: greenyellow;
+    background: black;
     cursor: pointer;
 }
 
@@ -64,10 +62,54 @@ output {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: greenyellow;
+    background: white;
     cursor: pointer;
 }
 
-#length-value {
-    background-color: none;
+.slide-container label {
+    font-weight: bolder;
+}
+
+/* generated password coding */
+form {
+    display: block;
+    margin-top: 0;
+}
+
+.generated-password-form {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.generated-password {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+[type=text] {
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 100%;
+    height: 40px;
+    font-size: 32px;
+    user-select: all;
+}
+
+/* checkbox coding */
+.checkbox {
+    display: list-item;
+    list-style-type: none;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    float: right;
+    max-width: 170px;
+}
+.checkbox input {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
 }
