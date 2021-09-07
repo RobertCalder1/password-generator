@@ -1,9 +1,12 @@
 // slider output scripting
 var slider = document.getElementById("Characters");
-var output = document.getElementById("characters-value");
-output.innerHTML = slider.value;
+var slideroutput = document.getElementById("characters-value");
+slideroutput.value = slider.value;
 
 slider.oninput = function() {
-    output.innerHTML = this.value;
+    slideroutput.value = this.value;
 }
 
+slideroutput.oninput = function() {
+    slider.value = this.value;
+}

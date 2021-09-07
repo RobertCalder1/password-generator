@@ -10,7 +10,6 @@ html {
 
 /* body coding */
 body {
-    background-color
     justify-content: center;
     align-items: center;
     min-height: 300px;
@@ -31,8 +30,14 @@ body {
 
 /* button coding */
 button {
-    min-width: 150px;
+    min-width: 300px;
     min-height: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    font-weight: bolder;
+    font-family: monospace;
 }
 
 /* slider coding */
@@ -105,8 +110,7 @@ form {
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    float: right;
-    max-width: 170px;
+    min-width: 200px;
 }
 .checkbox input {
     cursor: pointer;
