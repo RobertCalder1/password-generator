@@ -10,11 +10,11 @@
 <body class ="box">
   <h2> Random Password Generator</h2>
   <div class=password-box>
-    <input type="text" id="password-box">
+    <output type="text"></output>
   </div>
   <div class="slide-container">
-    <input type="range" id="Password-Length" min="8" max="128" value=16>
-    <label for=Password-Length>Password Length</label>
+    <input type="range" id="Password-Length" min="8" max="128" class="slider" id="slider" value=16>
+    <label for=Password-Length>Password Length:<output id="length-value"></output></label>
   </div>
   <div class="Checkboxes">
     <input type="checkbox" id="Uppercase" name="Uppercase" value="Uppercase">
@@ -25,4 +25,7 @@
     <label for="Symbols">Symbols</label>
   </div>
   <button type="button">Generate</button>
+  <script src=./assets/script.js></script>
 </body>
+
+</html>
