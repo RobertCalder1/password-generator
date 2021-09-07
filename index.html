@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body class ="box">
+  <h2> Random Password Generator</h2>
+  <div class=password-box>
+    <input type="text" id="password-box">
+  </div>
+  <div class="slide-container">
+    <input type="range" id="Password-Length" min="8" max="128" value=16>
+    <label for=Password-Length>Password Length</label>
+  </div>
+  <div class="Checkboxes">
+    <input type="checkbox" id="Uppercase" name="Uppercase" value="Uppercase">
+    <label for="Uppercase">Uppercase</label>
+    <input type="checkbox" id="Numbers" name="Numbers" value="Numbers">
+    <label for="Numbers">Numbers</label>
+    <input type="checkbox" id="Symbols" name="Symbols" value="Symbols">
+    <label for="Symbols">Symbols</label>
+  </div>
+  <button type="button">Generate</button>
+</body>
